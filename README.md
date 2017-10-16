@@ -21,9 +21,12 @@ The study will adapt to available datasets and technical limits. As this project
 
 ## Dependencies 
   * Jupyter Notebook
-  * Python 3
+  * Python 2
   * Pandas 
   * Numpy
+  * gdal
+  * Scikit-learn
+
 
 ## Site selection 
 A region of in Central American will be selected if data is available. 
