@@ -1,0 +1,28 @@
+ -n poverty-predictor matplotlib gdal
+10087  source activate poverty-predictor
+10088  conda info --envs
+10089* /Users/karla/anaconda3/envs/poverty-predictor/bin/jupyter_mac.command ; exit;
+10090  conda search gdal
+10091  cd /Users/karla/anaconda3/envs/poverty-predictor/lib/python3.5/site-packages/osgeo/
+10092  ls
+10093  cd /Users/karla/anaconda3/envs/poverty-predictor/lib/
+10094  ld
+10095  ls
+10096  conda install -c conda-forge gdal
+10097  python -c "import osgeo"
+10098  conda install -n gdal3 libgdal=2.0.0\n\n
+10099  conda install -n poverty-predictor libgdal=2.0.0\n\n
+10100  python -c "import osgeo"
+10101  cd /Users/karla/anaconda3/envs/poverty-predictor/lib/
+10102  python -c "import osgeo"
+10103  conda install -f jpeg=8
+10104  conda install libgdal
+10105  python -c "import osgeo"
+10106* /Users/karla/anaconda3/envs/poverty-predictor/bin/jupyter_mac.command ; exit;
+10107  conda info
+10108  conda info -envs
+10109  conda install --name poverty-predictor -f jpeg=8
+10110  conda install --name poverty-predictor libgdal
+10111  conda list
+conda install -n poverty-predictor scikit-learn 
+conda install -n poverty-predictor shapely
