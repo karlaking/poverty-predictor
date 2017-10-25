@@ -26,3 +26,10 @@
 10111  conda list
 conda install -n poverty-predictor scikit-learn 
 conda install -n poverty-predictor shapely
+conda install -c conda-forge cartopy
+
+
+
+
+
+ -n sandbox matplotlib gdal libgdal scikit-learn shapely cartopy
