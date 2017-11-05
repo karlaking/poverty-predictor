@@ -19,14 +19,16 @@
 
   **II. Comparison**
   * Subtract the Daytime image from the Nighttime image 
-        * A score of 0 is expected:
-        ``` (1-urban - 1-light = 0) (0-non-urban - 1- dark = 0) ```
-        * A score of 1 indicates an early where poverty is predicted:
-        ``` (1-urban - 0-dark = 1) ```
-        * A score of -1 may be a false positive, such as a fire: 
-        ``` (0-non-urban - 1-light = -1)```
 
-    *The quality of the classification is not the primary focus of this excercise, though an accuracy assessment of both classified images is included. I am limited to producing the training datasets and wanted to prioritize building a pipeline, including accuracy assessments, for the process using this tech stack. Parameters of training the model were optimized, however the training-data is a limiting factor.*
+  Outcome | Score | Meaning  
+------------ | -------------
+1-urban - 1-light | 0 | expected
+0-non-urban - 0-dark | 0 | expected
+1-urban - 0-dark | 1 | poverty is predicted
+0-non-urban - 1-light | -1 | false positve (ex. fire)
+        
+
+  *The quality of the classification is not the primary focus of this excercise, though an accuracy assessment of both classified images is included. I am limited to producing the training datasets and wanted to prioritize building a pipeline, including accuracy assessments, for the process using this tech stack. Parameters of training the model were optimized, however the training-data is a limiting factor.*
 
 ## Data Sets 
    * [Night-lights VIIRS Imagery](https://ngdc.noaa.gov/eog/viirs/download_ut_mos.html)
@@ -41,6 +43,8 @@
   * scikit-learn
   * scikit-image
 
+## Project Status
+  As of 11/05/17 - I am still working to fine-tune the classifications of both datasets.
 
 ## REFERENCES 
 * [Python for geospatial data processing by Carlos De La Torre](https://www.machinalis.com/blog/python-for-geospatial-data-processing/)
