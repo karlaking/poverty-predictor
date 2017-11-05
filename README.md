@@ -10,18 +10,18 @@
     
   **I. Classification**
   * Daytime image - Label pixels *1-urban* or *0-non-urban*
-         * Segment the image using the ```scikit-learn quickshift``` and ```felzenszwalb modules```
-         * Train the  ```scikit-learn RandomForestClassifier ``` model using training data to classify segments
-         * Bin the data into urban and non-urban classes 
+    * Segment the image using the ```scikit-learn quickshift``` and ```felzenszwalb modules```
+    * Train the  ```scikit-learn RandomForestClassifier ``` model using training data to classify segments
+    * Bin the data into urban and non-urban classes 
   * Nighttime image - Label pixels *1-light* and *0-dark*
-        *  Train the  ```scikit-learn RandomForestClassifier ``` model using training data to classify pixels
-         * Bin the data into light and dark classes 
+    *  Train the  ```scikit-learn RandomForestClassifier ``` model using training data to classify pixels
+    * Bin the data into light and dark classes 
 
   **II. Comparison**
   * Subtract the Daytime image from the Nighttime image 
 
-  Outcome | Score | Meaning  
------------- | -------------
+Outcome      | Score        | Meaning  
+------------ | ------------ | ------------
 1-urban - 1-light | 0 | expected
 0-non-urban - 0-dark | 0 | expected
 1-urban - 0-dark | 1 | poverty is predicted
