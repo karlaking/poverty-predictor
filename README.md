@@ -9,16 +9,16 @@
   The foundational study uses World Bank Data and computer vision to complete the poverty prediction research. My course of analysis does not include some of these techniques, rather relies on a two step method of classification and comparison. Here is an overview of the steps involved:
     
   I. Classification 
-      Daytime image - Label pixels *1-urban* or *0-non-urban*
+      1. Daytime image - Label pixels *1-urban* or *0-non-urban*
          * Segment the image using the ```scikit-learn quickshift``` and ```felzenszwalb modules```
          * Train the  ```scikit-learn RandomForestClassifier ``` model using training data to classify segments
          * Bin the data into urban and non-urban classes 
-      Nighttime image - Label pixels *1-light* and *0-dark*
+      2. Nighttime image - Label pixels *1-light* and *0-dark*
         *  Train the  ```scikit-learn RandomForestClassifier ``` model using training data to classify pixels
          * Bin the data into light and dark classes 
 
- II. Comparison 
-      Subtract the Daytime image from the Nighttime image 
+  II. Comparison 
+      1. Subtract the Daytime image from the Nighttime image 
         * A score of 0 is expected:
         ``` (1-urban - 1-light = 0) (0-non-urban - 1- dark = 0) ```
         * A score of 1 indicates an early where poverty is predicted:
