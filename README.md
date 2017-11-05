@@ -18,7 +18,7 @@
          * Bin the data into light and dark classes 
 
   **II. Comparison**
-      1. Subtract the Daytime image from the Nighttime image 
+  * Subtract the Daytime image from the Nighttime image 
         * A score of 0 is expected:
         ``` (1-urban - 1-light = 0) (0-non-urban - 1- dark = 0) ```
         * A score of 1 indicates an early where poverty is predicted:
