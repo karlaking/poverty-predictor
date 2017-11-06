@@ -1,12 +1,11 @@
 # poverty-predictor
 
 ## Overview 
-* Machine learning, data science, and satellite imagery used to map areas displaying indicators of poverty. The purpose of this excercise is to apply newly researched remote sensing techniques to analyze a new area and to gain experience in this particular python development environment. 
+Machine learning, data science, and satellite imagery used to map areas displaying indicators of poverty. The purpose of this excercise is to apply a remote sensing research case in order to gain experience in this particular python development environment. 
     * This project applies techniques established in a 2016 study from [Stanford University](http://sustain.stanford.edu/predicting-poverty/)
 
 ### Description of methods 
-  * View the original code [here](https://github.com/nealjean/predicting-poverty)
-  The foundational study uses World Bank Data and computer vision to complete the poverty prediction research. My course of analysis does not include some of these techniques, rather relies on a two step method of classification and comparison. Here is an overview of the steps involved:
+  The foundational study uses World Bank Data and computer vision to complete the poverty prediction research. View the original code [here](https://github.com/nealjean/predicting-poverty). My course of analysis does not include some of these techniques, and relies on a two step method of classification and comparison. Here is an overview of the steps involved:
     
   **I. Classification**
   * Daytime image - Label pixels *1-urban* or *0-non-urban*
@@ -44,7 +43,7 @@ Outcome      | Score        | Meaning
   * scikit-image
 
 ## Project Status
-  As of 11/05/17 - I am still working to fine-tune the classifications of both datasets.
+  As of 11/05/17 - I am still working on establishing and fine tuning the classification process for both day and night images. Next steps are binning the urban dataset and performing accuracy assessments. 
 
 ## REFERENCES 
 * [Python for geospatial data processing by Carlos De La Torre](https://www.machinalis.com/blog/python-for-geospatial-data-processing/)
