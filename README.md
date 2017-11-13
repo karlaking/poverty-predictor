@@ -1,8 +1,7 @@
 # poverty-predictor
 
 ## Overview 
-Machine learning, data science, and satellite imagery used to map areas displaying indicators of poverty. The purpose of this excercise is to apply a remote sensing research case in order to gain experience in this particular python development environment. 
-    * This project applies techniques established in a 2016 study from [Stanford University](http://sustain.stanford.edu/predicting-poverty/)
+Machine learning, data science, and satellite imagery used to map areas displaying indicators of poverty. The purpose of this excercise is to apply a remote sensing research case in order to gain experience in this particular python development environment. This project applies techniques established in a 2016 study from [Stanford University](http://sustain.stanford.edu/predicting-poverty/).
 
 ### Description of methods 
   The foundational study uses World Bank Data and computer vision to complete the poverty prediction research. View the original code [here](https://github.com/nealjean/predicting-poverty). My course of analysis does not include some of these techniques, and relies on a two step method of classification and comparison. Here is an overview of the steps involved:
@@ -27,7 +26,7 @@ Outcome      | Score        | Meaning
 0-non-urban - 1-light | -1 | false positve (ex. fire)
         
 
-  *The quality of the classification is not the primary focus of this excercise, though an accuracy assessment of both classified images is included. I am limited to producing the training datasets and wanted to prioritize building a pipeline, including accuracy assessments, for the process using this tech stack. Parameters of training the model were optimized, however the training-data is a limiting factor.*
+  The quality of the classification is not the primary focus of this excercise, though an accuracy assessment of both classified images is included. I am limited to producing the training datasets and wanted to prioritize building a pipeline, including accuracy assessments, for the process using this tech stack. Parameters of training the model were optimized, however the training-data is a limiting factor.
 
 ## Data Sets 
    * [Night-lights VIIRS Imagery](https://ngdc.noaa.gov/eog/viirs/download_ut_mos.html)
@@ -37,7 +36,7 @@ Outcome      | Score        | Meaning
 ## Dependencies 
   * Jupyter Notebook
   * Python 3
-  * Numpy
+  * NumPy
   * gdal 2.0
   * scikit-learn
   * scikit-image
