@@ -42,7 +42,7 @@ Outcome      | Score        | Meaning
   * scikit-image
 
 ## Project Status
-  As of 11/05/17 - I am still working on establishing and fine tuning the classification process for both day and night images. Next steps are binning the urban dataset and performing accuracy assessments. 
+  As of 1/8/17 - I am still working on establishing and classification for both day and night images. I've used a segmentation method for the land cover (urban) classification, and a supervised pixel-wise method for the night lights classification. Next step is performing accuracy assessments for both classifications. 
 
 ## REFERENCES 
 * [Python for geospatial data processing by Carlos De La Torre](https://www.machinalis.com/blog/python-for-geospatial-data-processing/)
